@@ -20,6 +20,10 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-work-history {
+    background-color: #9b59b6;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -68,6 +72,7 @@ h4 {
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: 'Exo', sans-serif;
     font-weight: 300;
@@ -81,7 +86,7 @@ h4 {
 }
 
 .logo {
-    background: url('../img/imagem-perfil.png');
+    background: url('../img/foto-perfil.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -254,4 +259,67 @@ footer {
 .personal-info-item .value {
     position: relative;
     width: 60%;
+}
+
+/* -------------------- Skills -------------------- */
+.progress-section {
+    margin: 40px 20px;
+}
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.progress-bar {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* -------------------- Work History -------------------- */
+.history-items {
+    margin-bottom: 30px;
+}
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
 }
